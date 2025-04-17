@@ -29,14 +29,13 @@ class MyApp extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8.0),
             ),
-          ),      ),
-      home: const SplashScreen(),
+          ),
+        ),
+        home: const SplashScreen(),
       ),
     );
   }
 }
-}
-        child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
