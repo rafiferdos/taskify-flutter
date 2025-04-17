@@ -15,7 +15,7 @@ class Task {
     this.dueDate,
   });
 
-  // Convert Task object to JSON Map
+  // Convert Task object to JSON Map.
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -27,7 +27,7 @@ class Task {
     };
   }
 
-  // Create Task object from JSON Map
+  // Create Task object from JSON Map.
   factory Task.fromJson(Map<String, dynamic> json) {
     return Task(
       id: json['id'],
@@ -39,7 +39,7 @@ class Task {
     );
   }
 
-  // Create a copy of the task with updated fields
+  // Create a copy of the task with updated fields.
   Task copyWith({
     String? id,
     String? title,
