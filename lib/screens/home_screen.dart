@@ -20,14 +20,19 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   void initState() {
     super.initState();
     _tabController = TabController(length: 2, vsync: this);
-    _loadTasks();
+    // Use post-frame callback to safely access provider after build is complete
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadTasks();
+    });
   }
 
   Future<void> _loadTasks() async {
     await Provider.of<TaskProvider>(context, listen: false).initTasks();
-    setState(() {
-      _isLoading = false;
-    });
+    if (mounted) {
+      setState(() {
+        _isLoading = false;
+      });
+    }
   }
 
   @override
