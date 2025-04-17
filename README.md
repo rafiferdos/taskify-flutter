@@ -299,4 +299,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Developed with ❤️ by Rafi Ferdos - using Flutter
+Developed with ❤️ by Rafi Ferdos & Happy Akther Hira - using Flutter
