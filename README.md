@@ -1,4 +1,4 @@
-# taskify
+# Taskify
 
 # Taskify - A Flutter Task Management Application
 
